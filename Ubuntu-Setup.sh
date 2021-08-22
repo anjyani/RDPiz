@@ -1,4 +1,4 @@
-case ( echo $1 | tr '[:upper:]' '[:lower:]' ) in
+case echo $1 | tr '[:upper:]' '[:lower:]' in
     1|ubuntu)
         printf 'Ubuntu Desktop Environment.'
         sudo apt update 
