@@ -1,4 +1,5 @@
-case $( echo "$1" | tr '[:upper:]' '[:lower:]' ) in
+get = $( echo "$1" | tr '[:upper:]' '[:lower:]' )
+case $( $get ) in
     1|ubuntu)
         printf 'Ubuntu Desktop Environment.'
         sudo apt update 
